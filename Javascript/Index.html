@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number"id="frist number"/>
+    <input type="number"id="second number"/>
+    <input type="submit"onclick="submit()"/>
+    <p id="res"></p>
+    
+</body>
+ <script>
+    function submit(){
+    let x=document .getElementById("frist number").value;
+     x=parseInt(x);
+    let y=document .getElementById("second number").value;
+     y=parseInt(y);
+    const z=x+y;
+    document.getElementById("res").innerHTML=("The sum is"+ z);
+    }
+ </script>
+</html>

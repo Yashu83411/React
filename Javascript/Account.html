@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Amount = 50000;
+        let Originalpin =1508;
+        let pin=+prompt("enter a pin number");
+        if(Originalpin==pin){
+            let debit = +prompt();
+            let BalanceAmount = Amount-debit;
+            if(debit<=Amount){
+                alert(" transaction completed"  +BalanceAmount)
+            }
+            else if(debit>Amount){
+                alert(" Insufficient funds" )
+            }
+            else{
+                alert("enter a valid Amount ")
+            }
+        }
+        else {
+            alert("enter a valid pin number ")
+        }
+    </script>
+</body>
+</html>
